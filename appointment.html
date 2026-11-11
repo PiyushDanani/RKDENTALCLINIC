@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="gu-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book WhatsApp Appointment | R.K. Dental Clinic Ahmedabad</title>
+  <meta name="description" content="Book online & WhatsApp appointment with Dr. Riddhi Trivedi & Dr. Sarthak Trivedi at R.K. Dental Clinic. Fast booking via WhatsApp: 7984138168.">
+
+  <!-- Google Fonts: Poppins & Noto Sans Gujarati -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>Direct Appointment: <a href="tel:7984138168">7984138168</a></span>
+        </div>
+        <div class="top-bar-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>Monday to Saturday: 9:30 AM - 1:30 PM & 4:30 PM - 9:30 PM</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Instant WhatsApp Confirmation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon-wrapper">
+          <i class="fa-solid fa-tooth"></i>
+        </div>
+        <div class="brand-text">
+          <h1>R.K. <span>DENTAL CLINIC</span></h1>
+          <p class="brand-subtitle gujarati-text">આર. કે. ડેન્ટલ ક્લિનિક</p>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Doctors</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="branches.html" class="nav-link">Branches & Timings</a>
+        <a href="appointment.html" class="nav-link active">Book Appointment</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="tel:7984138168" class="btn btn-call">
+          <i class="fa-solid fa-phone"></i> કોલ કરો
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1 class="page-banner-title">WhatsApp એપોઇન્ટમેન્ટ બુકિંગ</h1>
+      <div class="page-banner-breadcrumb">
+        <a href="index.html">હોમ</a> <i class="fa-solid fa-angle-right"></i> <span>ઓનલાઇન એપોઇન્ટમેન્ટ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Booking Main Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="hero-grid" style="align-items: flex-start;">
+        
+        <!-- Left Side: Interactive WhatsApp Form -->
+        <div>
+          <div class="appointment-booking-box">
+            <div class="appointment-header-strip">
+              <h2><i class="fa-brands fa-whatsapp" style="color: #4ade80;"></i> સરળ WhatsApp બુકિંગ</h2>
+              <p>ફક્ત નીચેનું સરળ ફોર્મ ભરીને સબમિટ કરો. વિગતો સીધી અમારા WhatsApp નંબર <strong>7984138168</strong> પર મોકલાશે.</p>
+            </div>
+
+            <div class="appointment-form-inner">
+              <form id="whatsappAppointmentForm">
+                <div class="form-grid">
+                  <!-- Patient Name -->
+                  <div class="form-group">
+                    <label class="form-label" for="appName">
+                      <i class="fa-solid fa-user"></i> દર્દીનું પૂરું નામ (Patient Name) *
+                    </label>
+                    <input type="text" id="appName" class="form-control" placeholder="તમારું પૂરું નામ લખો" required>
+                  </div>
+
+                  <!-- Mobile Number -->
+                  <div class="form-group">
+                    <label class="form-label" for="appPhone">
+                      <i class="fa-solid fa-phone"></i> મોબાઈલ નંબર (Mobile Number) *
+                    </label>
+                    <input type="tel" id="appPhone" class="form-control" placeholder="તમારો 10 અંકનો મોબાઈલ નંબર" pattern="[0-9]{10}" title="10 અંકનો મોબાઈલ નંબર દાખલ કરો" required>
+                  </div>
+
+                  <!-- Clinic Branch -->
+                  <div class="form-group">
+                    <label class="form-label" for="appBranch">
+                      <i class="fa-solid fa-hospital"></i> ક્લિનિક શાખા પસંદ કરો (Select Branch) *
+                    </label>
+                    <select id="appBranch" class="form-control" required>
+                      <option value="">-- શાખા પસંદ કરો --</option>
+                      <option value="શાખા ૧: જગતપુર રોડ, ગોતા, અમદાવાદ (Gota Branch)">
+                        શાખા ૧: જગતપુર રોડ, ગોતા (Branch 1 - Gota)
+                      </option>
+                      <option value="શાખા ૨: ત્રાગડ રોડ, ચાંદખેડા, અમદાવાદ (Tragad Branch)">
+                        શાખા ૨: ત્રાગડ રોડ, ચાંદખેડા (Branch 2 - Tragad/Chandkheda)
+                      </option>
+                    </select>
+                  </div>
+
+                  <!-- Doctor Preference -->
+                  <div class="form-group">
+                    <label class="form-label" for="appDoctor">
+                      <i class="fa-solid fa-user-doctor"></i> પસંદગીના ડોક્ટર (Doctor Preference)
+                    </label>
+                    <select id="appDoctor" class="form-control">
+                      <option value="કોઈપણ ઉપલબ્ધ ડેન્ટલ સર્જન (Any Doctor)">કોઈપણ ઉપલબ્ધ ડેન્ટલ સર્જન</option>
+                      <option value="Dr. Riddhi Trivedi (Dental Surgeon)">Dr. Riddhi Trivedi (ડેન્ટલ સર્જન)</option>
+                      <option value="Dr. Sarthak Trivedi (Dental Surgeon)">Dr. Sarthak Trivedi (ડેન્ટલ સર્જન)</option>
+                    </select>
+                  </div>
+
+                  <!-- Date -->
+                  <div class="form-group">
+                    <label class="form-label" for="appDate">
+                      <i class="fa-solid fa-calendar-day"></i> મુલાકાતની તારીખ (Appointment Date) *
+                    </label>
+                    <input type="date" id="appDate" class="form-control" required>
+                  </div>
+
+                  <!-- Time Slot -->
+                  <div class="form-group">
+                    <label class="form-label" for="appTimeSlot">
+                      <i class="fa-solid fa-clock"></i> સમય સ્લોટ (Preferred Time) *
+                    </label>
+                    <select id="appTimeSlot" class="form-control" required>
+                      <option value="">-- સમય પસંદ કરો --</option>
+                      <option value="સવારનો સમય: 9:30 AM to 1:30 PM (Morning Slot)">સવારનો સમય: 9:30 AM થી 1:30 PM</option>
+                      <option value="સાંજનો સમય: 4:30 PM to 9:30 PM (Evening Slot)">સાંજનો સમય: 4:30 PM થી 9:30 PM</option>
+                      <option value="રવિવાર સવારનો સમય: 10:00 AM to 1:00 PM (Sunday Slot)">રવિવારે સવારે: 10:00 AM થી 1:00 PM</option>
+                    </select>
+                  </div>
+
+                  <!-- Reason / Concern -->
+                  <div class="form-group full-width">
+                    <label class="form-label" for="appReason">
+                      <i class="fa-solid fa-comment-medical"></i> સમસ્યા / સારવારની વિગત (Concern / Treatment)
+                    </label>
+                    <textarea id="appReason" class="form-control" placeholder="જેમ કે: દાંતમાં સખત દુખાવો, કેવિટી, રૂટ કેનાલ, દાંત સાફ કરાવવા, ક્રાઉન/કેપ બેસાડવી અથવા રેગ્યુલર ચેકઅપ..."></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="whatsapp-submit-btn">
+                  <i class="fa-brands fa-whatsapp fa-xl"></i> WhatsApp પર એપોઇન્ટમેન્ટ વિનંતી મોકલો
+                </button>
+
+                <p class="appointment-note">
+                  <i class="fa-solid fa-check-double" style="color: #10b981;"></i> સબમિટ કર્યા પછી WhatsApp ખુલી જશે જ્યાં તમે એક ક્લિકમાં મેસેજ મોકલી શકશો.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Contact Cards & Direct Options -->
+        <div>
+          <!-- Urgent Contact Box -->
+          <div style="background: linear-gradient(135deg, #eff6ff, #dbeafe); border-radius: 16px; padding: 25px; border: 1.5px solid #93c5fd; margin-bottom: 25px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+              <div style="width: 44px; height: 44px; background: var(--secondary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 1.15rem; color: var(--text-main); font-weight: 700;">ઈમરજન્સી અથવા તાત્કાલિક મુલાકાત?</h3>
+                <p style="font-size: 0.82rem; color: var(--text-muted);">દાંતમાં અસહ્ય દુખાવો હોય તો સીધો કોલ કરો</p>
+              </div>
+            </div>
+            <p style="font-size: 0.92rem; color: var(--text-main); margin-bottom: 16px;">
+              અમારા હેલ્પલાઇન નંબર પર તમે સીધો ફોન કરીને તાત્કાલિક એપોઇન્ટમેન્ટ પણ મેળવી શકો છો:
+            </p>
+            <a href="tel:7984138168" class="btn btn-call" style="width: 100%;">
+              <i class="fa-solid fa-phone"></i> Call: 7984138168
+            </a>
+          </div>
+
+          <!-- Quick Timing Reminder -->
+          <div style="background: var(--white); border-radius: 16px; padding: 25px; border: 1px solid var(--border-color); box-shadow: var(--card-shadow); margin-bottom: 25px;">
+            <h3 style="font-size: 1.1rem; color: var(--secondary); font-weight: 800; margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-clock"></i> ક્લિનિક સમય માર્ગદર્શિકા
+            </h3>
+            <ul style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.8;">
+              <li><strong>સોમ થી શનિ (સવાર):</strong> 9:30 AM - 1:30 PM</li>
+              <li><strong>સોમ થી શનિ (સાંજ):</strong> 4:30 PM - 9:30 PM</li>
+              <li><strong>રવિવાર:</strong> સવારે 10:00 AM - 1:00 PM</li>
+            </ul>
+          </div>
+
+          <!-- Visiting Card Reminder -->
+          <div class="card-preview-frame">
+            <img src="images/visiting-card.jpg" alt="R.K. Dental Clinic Visiting Card" class="card-preview-img">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <h3>R.K. DENTAL CLINIC</h3>
+        <p class="gujarati-text">
+          Dr. Riddhi Trivedi & Dr. Sarthak Trivedi (Dental Surgeons).
+        </p>
+        <p><strong>એપોઇન્ટમેન્ટ કોલ: 7984138168</strong></p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Doctors</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="branches.html">Branches & Timings</a></li>
+          <li><a href="appointment.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>શાખા ૧ (ગોતા)</h3>
+        <p class="footer-branch-addr">
+          ૧૨૯, પહેલો માળ, શ્રી વિષ્ણુધારા ગાર્ડન, દ્વારકા એપાર્ટમેન્ટ પાસે, જગતપુર રોડ, ગોતા, અમદાવાદ - ૩૮૨૪૮૧.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>શાખા ૨ (ત્રાગડ, ચાંદખેડા)</h3>
+        <p class="footer-branch-addr">
+          ૧૦૪, પહેલો માળ, સત્યમેવ રોયલ-૩, ઍપોલો સ્કુલની પાસે, ત્રાગડ રોડ, ચાંદખેડા, અમદાવાદ - ૩૮૨૪૭૦.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <div>© 2026 R.K. Dental Clinic. All Rights Reserved.</div>
+        <div>Design & Develop by <a href="https://ithubsoftware.com/" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; font-weight: 700; text-decoration: underline;">ITHUB SOFTWARE SOLUTION</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Action Buttons -->
+  <div class="floating-actions-container">
+    <a href="https://wa.me/917984138168" target="_blank" class="floating-btn floating-whatsapp" title="WhatsApp Appointment">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:7984138168" class="floating-btn floating-call" title="Call Clinic Now">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Mobile Sticky Bottom Bar -->
+  <div class="mobile-bottom-bar">
+    <a href="tel:7984138168" class="btn btn-call" style="padding: 10px 5px; font-size: 0.9rem;">
+      <i class="fa-solid fa-phone"></i> કૉલ કરો
+    </a>
+    <a href="https://wa.me/917984138168" target="_blank" class="btn btn-whatsapp" style="padding: 10px 5px; font-size: 0.9rem;">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp બુક
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
